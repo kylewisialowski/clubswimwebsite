@@ -1,1 +1,18 @@
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.typing-container h1 {
+  font-size: 3em;
+  font-family: 'Courier New', monospace;
+  color: #5c2e91; /* Brown-purple-ish */
+  white-space: nowrap;
+  border-right: 3px solid #5c2e91;
+  overflow: hidden;
+}
 

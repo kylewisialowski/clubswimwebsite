@@ -501,25 +501,9 @@ body {
   }
 
   /* Records Table */
-  .record-row {
-    flex-direction: column;
-  }
-
-  .record-cell {
-    width: 100%;
-    border-left: none;
-    border-top: 1px solid #347e98;
-    text-align: center;
-    font-size: 0.85rem;
-  }
 
   .record-cell:first-child {
     border-top: none;
-  }
-
-  .record-cell.record-event {
-    font-size: 1rem;
-    padding: 0.6rem;
   }
 
   .record-header {
@@ -550,6 +534,30 @@ body {
 
   .team-photo {
     margin-top: 100px !important;
+  }
+
+  .record-row {
+    flex-direction: column;
+  }
+
+  .record-cell {
+    border-left: none;
+    border-top: 1px solid #347e98;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .record-cell.record-event {
+    font-weight: bold;
+    font-size: 1.1rem;
+    order: -1; /* move the event to the top */
+    background-color: #e0f2f7;
+    color: #347e98;
+  }
+
+  .record-header-row {
+    display: none; /* Hide the header row on mobile */
   }
 
 }

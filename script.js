@@ -1,13 +1,28 @@
-const text = "Welcome to Brown Club Swim";
-const target = document.getElementById("typed-text");
+document.addEventListener("DOMContentLoaded", () => {
+  const emojis = Array(30).fill('🫧').concat(['🪼', '🐠', '🐡']);
+  const container = document.getElementById('emojiBackground');
 
-let i = 0;
-function typeCharacter() {
-  if (i < text.length) {
-    target.textContent += text.charAt(i);
-    i++;
-    setTimeout(typeCharacter, 100); // speed of typing
+  const getRandom = (min, max) => Math.random() * (max - min) + min;
+
+  function createBubble() {
+    const el = document.createElement('div');
+    el.className = 'emoji-bubble';
+    el.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+
+    el.style.left = `${getRandom(0, 100)}%`;
+    el.style.animationDelay = `0s`;
+    el.style.animationDuration = `${getRandom(10, 18)}s`;
+    el.style.fontSize = `${getRandom(1.5, 2.5)}em`;
+
+    container.appendChild(el);
+
+    // Remove the bubble after it finishes floating
+    const lifetime = parseFloat(el.style.animationDuration) * 1000;
+    setTimeout(() => {
+      container.removeChild(el);
+    }, lifetime);
   }
-}
 
-typeCharacter();
+  // Generate a new bubble every 500ms (adjust for more or fewer)
+  setInterval(createBubble, 500);
+});

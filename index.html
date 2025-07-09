@@ -3,14 +3,257 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brown Club Swim</title>
+  <title>Brown Club Swim Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
-  <div class="typing-container">
-    <h1 id="typed-text"></h1>
-  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <div class="nav-left">
+        <img src="bear-logo.png" alt="Club Swim Bear" class="logo-image">
+        <div class="nav-logo">Brown Club Swim</div>
+      </div>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#register">Register</a></li>
+          <li><a href="#practice">Practice</a></li>
+          <li><a href="#meets">Meets</a></li>
+          <li><a href="#records">Records</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home">
+    <img src="team-photo.jpg" alt="Team Photo" class="team-photo site-section">
+  </section>
+
+  <!-- REGISTER -->
+  <section id="register">
+    <h2 class="section-heading site-section">Register in 5 quick steps:</h2>
+    <div class="button-row site-section">
+      <div class="button-step">
+        <a href="https://docs.google.com/forms/..." class="nav-button" data-tooltip="Join our ListServ" target="_blank">Email List</a>
+      </div>
+      <div class="button-step">
+        <a href="https://groupme.com/join_group/..." class="nav-button" data-tooltip="Join our GroupMe" target="_blank">GroupMe</a>
+      </div>
+      <div class="button-step">
+        <a href="https://brownrec.com/sports/..." class="nav-button" data-tooltip="Register with Brown Rec" target="_blank">Brown Club Sports</a>
+      </div>
+      <div class="button-step">
+        <a href="https://www.collegeclubswimming.com/page.cfm?..." class="nav-button" data-tooltip="Join CCS Roster" target="_blank">College Club Swimming</a>
+      </div>
+      <div class="button-step">
+        <a href="https://payment.brown.edu/..." class="nav-button" data-tooltip="Pay Semester Dues" target="_blank">Semesterly Dues</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRACTICE -->
+  <section id="practice" class="schedule-section site-section">
+    <h2 class="section-heading site-section">Practice Schedule:</h2>
+    <div class="info-section site-section">
+      <div class="info-blocks">
+        <div class="info-block swim-block">
+          <h3>Swim @ Nelson</h3>
+          <ul>
+            <li>Monday 6 – 7:30p</li>
+            <li>Tuesday 8:30 – 10:00p</li>
+            <li>Wednesday 6:30 – 8p</li>
+            <li>Thursday 6 – 7:30p</li>
+          </ul>
+          <div class="swimmer-emoji">🏊‍♀️</div>
+        </div>
+        <div class="info-block">
+          <h3>Lift @ Zucconi</h3>
+          <ul>
+            <li>Tuesday 7:30 – 8:30p</li>
+            <li>Thursday 7:30 – 8:30p</li>
+          </ul>
+          <div class="lift-emoji">🏋️‍♀️</div>
+        </div>
+      </div>
+      <div class="info-block cancellation-block">
+        <strong>Weekly Cancellations:</strong> There are no cancellations this week :)
+      </div>
+    </div>
+  </section>
+
+  <!-- MEETS -->
+  <section id="meets" class="meet-section site-section">
+    <h2 class="section-heading">Meet Schedule:</h2>
+    <div class="meet-table-wrapper site-section">
+      <div class="meet-row">
+        <div class="meet-cell">Sep. 6</div>
+        <div class="meet-cell">Swim Across America</div>
+        <div class="meet-cell"><a href="https://www.swimacrossamerica.org/site/TR/OpenWater/RhodeIsland?team_id=41110&pg=team&fr_id=7931">Registration</a></div>
+        <div class="meet-cell">Results</div>
+      </div>
+      <!-- Add more meet rows here -->
+    </div>
+  </section>
+
+  <!-- RECORDS -->
+  <section id="records" class="records-section site-section">
+    <h2 class="section-heading site-section">Team Records</h2>
+    <div class="records-wrapper">
+      <div class="record-row record-header-row">
+        <div class="record-cell record-header">Women's Records</div>
+        <div class="record-cell"></div> <!-- empty event cell -->
+        <div class="record-cell record-header">Men's Records</div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell">26.99<br><span class="record-sub">Leung, Ya Yuan Rachel (2014)</span></div>
+        <div class="record-cell record-event">50 Fly</div>
+        <div class="record-cell">23.73<br><span class="record-sub">Testa, EJ (2022)</span></div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell">29.41<br><span class="record-sub">Wang, Grace (2024)</span></div>
+        <div class="record-cell record-event">50 Back</div>
+        <div class="record-cell">25.73<br><span class="record-sub">Mouline, Karim (2023)</span></div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell">31.66<br><span class="record-sub">Kissel, Naomi (2024)</span></div>
+        <div class="record-cell record-event">50 Breast</div>
+        <div class="record-cell">26.70<br><span class="record-sub">Chen, Alan (2022)</span></div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell">25.43<br><span class="record-sub">Kissel, Naomi (2024)</span></div>
+        <div class="record-cell record-event">50 Free</div>
+        <div class="record-cell">21.68<br><span class="record-sub">Joseph, Julian (2023)</span></div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell">59.03<br><span class="record-sub">Leung, Ya Yuan Rachel (2014)</span></div>
+        <div class="record-cell record-event">100 Fly</div>
+        <div class="record-cell">51.91<br><span class="record-sub">Wisialowski, Kyle (2024)</span></div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell">1:02.28<br><span class="record-sub">Wang, Grace (2023)</span></div>
+        <div class="record-cell record-event">100 Back</div>
+        <div class="record-cell">49.48<br><span class="record-sub">Geiersbach, Alexander (2022)</span></div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell">1:09.75<br><span class="record-sub">Kissel, Naomi (2024)</span></div>
+        <div class="record-cell record-event">100 Breast</div>
+        <div class="record-cell">59.72<br><span class="record-sub">Chen, Alan (2022)</span></div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell">55.52<br><span class="record-sub">Tang, Helen (2013)</span></div>
+        <div class="record-cell record-event">100 Free</div>
+        <div class="record-cell">48.20<br><span class="record-sub">Block, Copeland (2023,2024)</span></div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell">1:02.7<br><span class="record-sub">Leung, Ya Yuan Rachel (2014)</span></div>
+        <div class="record-cell record-event">100 IM</div>
+        <div class="record-cell">55.47<br><span class="record-sub">Ren, Evan (2023)</span></div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell">2:34.9<br><span class="record-sub">Kim, Claire (2017)</span></div>
+        <div class="record-cell record-event">200 Fly</div>
+        <div class="record-cell">2:00.60<br><span class="record-sub">Wisialowski, Kyle (2023)</span></div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell">2:21.02<br><span class="record-sub">Barna, Yena (2023)</span></div>
+        <div class="record-cell record-event">200 Back</div>
+        <div class="record-cell">1:56.96<br><span class="record-sub">Geiersbach, Alexander (2023)</span></div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell">2:44.58<br><span class="record-sub">Kissel, Naomi (2023)</span></div>
+        <div class="record-cell record-event">200 Breast</div>
+        <div class="record-cell">2:15.55<br><span class="record-sub">Uchino, Kota (2023)</span></div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell">1:59.6<br><span class="record-sub">Tang, Helen (2013)</span></div>
+        <div class="record-cell record-event">200 Free</div>
+        <div class="record-cell">1:44.37<br><span class="record-sub">Geiersbach, Alexander (2022)</span></div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell">2:22.3<br><span class="record-sub">Li, Amy (2017)</span></div>
+        <div class="record-cell record-event">200 IM</div>
+        <div class="record-cell">2:01.26<br><span class="record-sub">Wisialowski, Kyle (2024)</span></div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell"></div>
+        <div class="record-cell record-event">400 IM</div>
+        <div class="record-cell">4:51.1<br><span class="record-sub">Burke, Ryan (2019)</span></div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell">5:41.0<br><span class="record-sub">Tang, Helen (2016)</span></div>
+        <div class="record-cell record-event">500 Free</div>
+        <div class="record-cell">5:01.56<br><span class="record-sub">Block, Copeland (2023)</span></div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell">1:45.91<br><span class="record-sub">Kissel, Mitchell, Widman, Wang (Jessica) (2024)</span></div>
+        <div class="record-cell record-event">200 Free Relay</div>
+        <div class="record-cell">1:27.25<br><span class="record-sub">Block, Ren, Mouline, Joseph (2023)</span></div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell">1:55.28<br><span class="record-sub">Wang (Grace), Kissel, Widman, Wang (Jessica) (2024)</span></div>
+        <div class="record-cell record-event">200 Medley Relay</div>
+        <div class="record-cell">1:38.36<br><span class="record-sub">Crane, Koksal, McDermott, Burke (2019)</span></div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell">4:03.75<br><span class="record-sub">Siegel, Choi, Paltrowitz, Widman (2023)</span></div>
+        <div class="record-cell record-event">400 Free Relay</div>
+        <div class="record-cell">3:14.75<br><span class="record-sub">Mouline, Uchino, Ren, Joseph (2023)</span></div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell"></div>
+        <div class="record-cell record-event">400 Medley Relay</div>
+        <div class="record-cell">3:38.24<br><span class="record-sub">Ren, Uchino, Mouline, Block (2023)</span></div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell">1:35.70<br><span class="record-sub">Wisialowski, Widman, Kissel, Block (2024)</span></div>
+        <div class="record-cell record-event">200 Mixed Free</div>
+        <div class="record-cell">1:35.70<br><span class="record-sub">Wisialowski, Widman, Kissel, Block (2024)</span></div>
+      </div>
+  
+      <div class="record-row">
+        <div class="record-cell">3:54.59<br><span class="record-sub">Liu, Kissel, Widman, Block (2023)</span></div>
+        <div class="record-cell record-event">400 Mixed Free</div>
+        <div class="record-cell">3:54.59<br><span class="record-sub">Liu, Kissel, Widman, Block (2023)</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="bubble-emoji-background" id="emojiBackground"></div>
+
   <script src="script.js"></script>
 </body>
 </html>
+
+
+
 

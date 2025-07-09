@@ -430,3 +430,118 @@ body {
 [id] {
   scroll-margin-top: 80px;
 }
+
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  .nav-left {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .nav-links li {
+    flex: 1 1 30%;
+    text-align: center;
+  }
+
+  .nav-logo {
+    font-size: 1.4em;
+  }
+
+  /* Buttons */
+  .button-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-button {
+    min-width: 200px;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+
+  /* Info blocks */
+  .info-blocks {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .info-block {
+    width: 90%;
+  }
+
+  /* Meet Table */
+  .meet-row {
+    flex-direction: column;
+  }
+
+  .meet-cell {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #347e98;
+    text-align: center;
+  }
+
+  .meet-cell:first-child {
+    border-top: none;
+  }
+
+  /* Records Table */
+  .record-row {
+    flex-direction: column;
+  }
+
+  .record-cell {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #347e98;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  .record-cell:first-child {
+    border-top: none;
+  }
+
+  .record-cell.record-event {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  .record-header {
+    font-size: 1rem;
+  }
+
+  /* Section spacing */
+  .site-section {
+    margin: 40px 10px;
+  }
+
+  .section-heading {
+    font-size: 1.5em;
+  }
+
+  .team-photo {
+    width: 95%;
+  }
+
+  /* Bubbles (optional: shrink emoji) */
+  .emoji-bubble {
+    font-size: 1.5em;
+  }
+}
+

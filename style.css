@@ -543,5 +543,10 @@ body {
   .emoji-bubble {
     font-size: 1.5em;
   }
+
+  [id] {
+    scroll-margin-top: 140px !important; /* or even 130px if the mobile navbar is very tall */
+  }
+
 }
 

@@ -549,13 +549,7 @@ body {
   }
 
   .team-photo {
-    display: block;
-    margin: 60px auto 30px auto; /* center with space from navbar */
-    width: 90%;
-    max-width: 800px;
-    border: 3px solid #347e98; /* blue border */
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* optional soft shadow */
+    margin-top: 100px !important;
   }
 
 }

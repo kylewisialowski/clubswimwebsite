@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     el.style.left = `${getRandom(0, 100)}%`;
     el.style.animationDelay = `0s`;
-    el.style.animationDuration = `${getRandom(10, 18)}s`;
+    el.style.animationDuration = `${getRandom(20, 30)}s`;
     el.style.fontSize = `${getRandom(1.5, 2.5)}em`;
 
     container.appendChild(el);
@@ -24,5 +24,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Generate a new bubble every 500ms (adjust for more or fewer)
-  setInterval(createBubble, 500);
+  setInterval(createBubble, 1500);
 });
